@@ -19,6 +19,7 @@ function sendMessage($chatID, $messaggio, $token) {
 $token = "5677505583:AAGd_enhKeP6A9zu9WNk8UGqMkwikrTlvtM";
 $chatid = "1913438485";
 
-sendMessage($chatid, "hello" , $token);
-
+if(isset($_GET['msg'])){
+  sendMessage($chatid, $_GET['msg'] , $token);
+}
 ?>
