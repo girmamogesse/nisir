@@ -1,3 +1,5 @@
+<?php
+
 function sendMessage($chatID, $messaggio, $token) {
     echo "sending message to " . $chatID . "\n";
 
@@ -24,3 +26,4 @@ if(isset($_GET["msg"])){
  sendMessage($chatid, $msg, $token);
 }
 
+?>
